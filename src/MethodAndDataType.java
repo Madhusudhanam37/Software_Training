@@ -37,14 +37,14 @@ public class MethodAndDataType {
     public static void main(String[] args) {
 
         intMethod(10, 10);
-        doubleMethod(10,5);
-        floatMethod(10f,5f);
+        doubleMethod(10, 5);
+        floatMethod(10f, 5f);
         longMethod(500L, 100L);
-        byte a=10,b=20;
-        byteMethod(a,b);
-        short a1=10,b1=10;
-        shortMethod(a1,b1);
-        charMethod('a','b');
+        byte a = 10, b = 20;
+        byteMethod(a, b);
+        short a1 = 10, b1 = 10;
+        shortMethod(a1, b1);
+        charMethod('a', 'b');
         booleanMethod(true);
     }
 }
