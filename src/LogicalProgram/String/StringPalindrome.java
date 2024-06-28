@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class StringPalindrome {
 
-    public static void stringPalindrome(String word){
-        String word1=word;
-        String s=" ";
-        String ss;
-        char[] c=word.toCharArray();
-        for(int i=0;i<c.length;i++){
-            ss=s+c[i];
+    public static void stringPalindrome(String word) {
+        String temp="";
+        for(int i=word.length()-1;i>=0;i--){
+            temp=temp+word.charAt(i);
         }
-//        System.out.println(ss);
+        if(word.equals(temp)){
+            System.out.println("String is Palindrome");
+        }else{
+            System.out.println("String is not Palindrome");
+        }
     }
 
     public static void main(String[] args) {
