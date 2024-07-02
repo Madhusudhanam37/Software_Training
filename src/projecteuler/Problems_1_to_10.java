@@ -22,7 +22,7 @@ public class Problems_1_to_10 {
     }
 
     public void fibonacciSequence1(int num){
-        int sum = 0,a = 1,b = 2;
+        int sum = 0,a = 1,b = 2,temp=0 ;
         for (int i = 0; b <= num; i = a + b) {
             if (b % 2 == 0) {
                 sum += b;
@@ -44,6 +44,13 @@ public class Problems_1_to_10 {
             b = next;
         }
         System.out.println("2nd Total Sum is : " + sum);//output:4613732
+    }
+
+    public long factorialDigitSum(int num){
+        if(num<=1){
+            return 1;
+        }
+        return num * factorialDigitSum(num -1);
     }
 
 
